@@ -7,8 +7,8 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Student Accommodation Platform",
-  description: "Find and book student accommodations worldwide",
+  title: "World's First Homestay Network",
+  description: "Experience authentic local living with our global network of homestays",
 };
 
 export default function RootLayout({
@@ -23,15 +23,15 @@ export default function RootLayout({
         <header className="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm">
           <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
             <Link href="/" className="font-bold text-xl">
-              HOMESTAY.Network
+              World's First HOMESTAY.Network
             </Link>
             
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/properties" className="text-gray-600 hover:text-gray-900">
-                Find Properties
+                Find Homestays
               </Link>
               <Link href="/list-property" className="text-gray-600 hover:text-gray-900">
-                List Your Property
+                List Your Home
               </Link>
               <Link href="/about" className="text-gray-600 hover:text-gray-900">
                 About
@@ -83,21 +83,21 @@ export default function RootLayout({
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold mb-4">Students</h3>
+                <h3 className="text-lg font-semibold mb-4">Travelers</h3>
                 <ul className="space-y-2">
                   <li>
                     <Link href="/properties" className="text-gray-400 hover:text-white">
-                      Find Accommodation
+                      Find Homestays
                     </Link>
                   </li>
                   <li>
                     <Link href="/universities" className="text-gray-400 hover:text-white">
-                      Universities
+                      Near Universities
                     </Link>
                   </li>
                   <li>
                     <Link href="/cities" className="text-gray-400 hover:text-white">
-                      Cities
+                      Popular Cities
                     </Link>
                   </li>
                 </ul>
@@ -108,7 +108,7 @@ export default function RootLayout({
                 <ul className="space-y-2">
                   <li>
                     <Link href="/list-property" className="text-gray-400 hover:text-white">
-                      List Your Property
+                      List Your Home
                     </Link>
                   </li>
                   <li>
@@ -152,7 +152,7 @@ export default function RootLayout({
             </div>
 
             <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-              <p>&copy; {new Date().getFullYear()} HOMESTAY.Network. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} World's First HOMESTAY.Network. All rights reserved.</p>
             </div>
           </div>
         </footer>
